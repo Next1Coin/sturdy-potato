@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sturdy Potato Flight Simulator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Sturdy Potato Flight Simulator</h1>
+    <p>Take off, navigate waypoints, and land safely using realistic-ish flight controls.</p>
+  </header>
+
+  <main>
+    <section class="sim-shell">
+      <canvas id="simCanvas" width="1200" height="700" aria-label="Flight simulator viewport"></canvas>
+      <aside class="panel">
+        <h2>Flight Instruments</h2>
+        <ul id="readouts"></ul>
+
+        <h3>Mission</h3>
+        <p id="missionStatus">Reach all waypoints, then return and land at the runway.</p>
+
+        <h3>Controls</h3>
+        <ul>
+          <li><strong>W / S</strong>: Pitch down/up</li>
+          <li><strong>A / D</strong>: Roll left/right</li>
+          <li><strong>Q / E</strong>: Yaw left/right</li>
+          <li><strong>Arrow Up / Down</strong>: Throttle +/-</li>
+          <li><strong>Space</strong>: Air brake</li>
+          <li><strong>R</strong>: Reset flight</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>Tip: Keep speed above 60 knots to avoid stalling. Smooth control inputs work best.</p>
+  </footer>
+
+  <script src="sim.js"></script>
+</body>
+</html>
